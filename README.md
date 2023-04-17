@@ -3,6 +3,7 @@
 Ensure you have permission before conducting any testing!
 
 1. Reconnaissance
+
    a. Passive
       - Google Dorking: `site:example.com, inurl, intext, etc.`
       - WHOIS Lookup: `whois example.com`
