@@ -13,6 +13,7 @@ Ensure you have permission before conducting any testing!
       - Nmap: `nmap -p- <target_IP>` (port scanning)
 
 2. Enumeration
+
    a. DNS Enumeration
       - Dig: `dig @<DNS_server> example.com AXFR`
       - Nmap: `nmap --script dns-brute <target_IP>`
@@ -27,6 +28,7 @@ Ensure you have permission before conducting any testing!
       - Dirb: `dirb <target_URL>`
 
 3. Vulnerability Assessment
+
    a. Nmap NSE Scripts
       - Nmap: `nmap --script vuln <target_IP>`
    b. OpenVAS
@@ -36,6 +38,7 @@ Ensure you have permission before conducting any testing!
       - Use a module: `use <module_name>`
 
 4. Exploitation
+
    a. Metasploit Framework
       - Set options: `set <option> <value>`
       - Run exploit: `exploit or run`
@@ -46,6 +49,7 @@ Ensure you have permission before conducting any testing!
       - XSS: Test payloads, use automated tools like `XSStrike`
 
 5. Post-Exploitation
+
    a. Privilege Escalation
       - Linux: `linPEAS, LinEnum`
       - Windows: `winPEAS, PowerUp, Sherlock`
