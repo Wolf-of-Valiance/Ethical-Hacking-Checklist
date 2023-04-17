@@ -8,6 +8,7 @@ Ensure you have permission before conducting any testing!
       - Google Dorking: `site:example.com, inurl, intext, etc.`
       - WHOIS Lookup: `whois example.com`
       - DNS Recon: `dnsrecon -d example.com`
+
    b. Active
       - Nmap: `nmap -sn <IP_range>` (ping sweep)
       - Nmap: `nmap -p- <target_IP>` (port scanning)
@@ -15,25 +16,34 @@ Ensure you have permission before conducting any testing!
 2. Enumeration
 
    a. DNS Enumeration
+ 
       - Dig: `dig @<DNS_server> example.com AXFR`
       - Nmap: `nmap --script dns-brute <target_IP>`
    b. SMB Enumeration
+   
       - Nmap: `nmap --script smb-enum-shares <target_IP>`
       - Smbclient: `smbclient \\\\<target_IP>\\<share_name> -U <username>`
    c. SNMP Enumeration
+   
       - Snmpwalk: `snmpwalk -c public -v1 <target_IP>`
       - Onesixtyone: `onesixtyone <target_IP>`
    d. Web Application Enumeration
+   
       - Nikto: `nikto -h <target_URL>`
       - Dirb: `dirb <target_URL>`
 
 3. Vulnerability Assessment
 
    a. Nmap NSE Scripts
+   
       - Nmap: `nmap --script vuln <target_IP>`
+      
    b. OpenVAS
+   
       - Setup and run OpenVAS on target systems
+      
    c. Metasploit Framework
+   
       - Search for modules: `search <vulnerability>`
       - Use a module: `use <module_name>`
 
